@@ -1,4 +1,4 @@
-# Full Stack Fianace Platform with Next JS,  Tailwind, Prisma, Inngest, ArcJet, Shadcn UI Tutorial 🔥🔥
+# Full Stack Fianace Platform with Next JS,  Tailwind, Prisma, Inngest, ArcJet, Shadcn UI  🔥🔥
 
 ### Make sure to create a `.env` file with following variables -
 
