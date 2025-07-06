@@ -7,18 +7,12 @@ import { Rocket, Crown, Star, ChevronRight, Zap, Shield, TrendingUp } from "luci
 const HeroSection = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isInView, setIsInView] = useState(false);
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const sectionRef = useRef(null);
-  const orbitRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
-    const handleMouseMove = (e) => {
-      setCursorPos({ x: e.clientX, y: e.clientY });
-    };
 
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("mousemove", handleMouseMove);
 
     const observer = new IntersectionObserver(
       ([entry]) => setIsInView(entry.isIntersecting),
@@ -29,7 +23,6 @@ const HeroSection = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("mousemove", handleMouseMove);
       observer.disconnect();
     };
   }, []);
@@ -92,9 +85,6 @@ const HeroSection = () => {
           />
         ))}
       </div>
-
-      <br />
-      <br />
 
       <div className="container mx-auto px-6 text-center relative z-10 my-6" >
         {/* Premium badge */}

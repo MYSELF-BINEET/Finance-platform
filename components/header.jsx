@@ -17,13 +17,6 @@ const Header = async () => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl blur opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
             <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-xl border border-blue-500/30">
-              {/* <Image
-                src={"/logo.png"}
-                alt="Welth Logo"
-                width={32}
-                height={32}
-                className="w-8 h-8 object-contain filter brightness-0 invert"
-              /> */}
             </div>
           </div>
           <div className="flex flex-col">
